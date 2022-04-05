@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "strictNullChecks": false,
+    "sourceMap": false,
+    "allowJs": true,
+    "target": "es5",
+    "outDir": ".build",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "typeRoots": [
+      "src/types/",
+      "node_modules/@types/"
+    ],
+    "lib": [
+      "es2015"
+    ],
+    "rootDir": "./"
+  },
+  "types": [
+    "aws-lambda",
+    "node"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/data",
+    "src/types"
+  ]
+}

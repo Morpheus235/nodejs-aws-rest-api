@@ -1,0 +1,13 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+.build
+
+# Env Files
+.env
+
+# Template Files
+serverless.template.yml

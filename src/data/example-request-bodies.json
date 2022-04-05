@@ -1,0 +1,12 @@
+[
+  {
+    "customerId": "0005465465"
+  },
+  {
+    "customerId": null,
+    "isBusinessCustomer": false
+  },
+  {
+    "isBusinessCustomer": true
+  }
+]

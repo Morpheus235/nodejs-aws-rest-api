@@ -1,0 +1,29 @@
+app: aws-node-rest-api
+service: aws-node-rest-api
+
+
+frameworkVersion: '3'
+# Load AWS Credentials from .env file
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-central-1
+
+functions:
+  hello:
+    handler: src/handler.products
+    events:
+      - http:
+          path: /products
+          method: get
+      - http:
+          path: /products
+          method: post
+package:
+  include:
+    - src/data/**.json
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
