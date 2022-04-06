@@ -5,9 +5,9 @@ export function productsRoute(event: APIGatewayEvent): APIResponse
 export type APIResponse = {
     statusCode: number | 200;
     body?: any | null;
-}
+};
 
-export type RequestBody = { any?: any }
+export type RequestBody = { any?: any };
 
 export const enum StatusCodes {
     OK = 200,

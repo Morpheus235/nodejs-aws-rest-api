@@ -3,8 +3,9 @@ import * as fs from "fs";
 import * as path from "path";
 
 const fsP = fs.promises;
+
 /**
- * @function parseFileasJson
+ * @function parseFileAsJson
  * @description checks if local File does exist and tries to parse it as JSON
  * @param filePath
  * @return Promise <File>

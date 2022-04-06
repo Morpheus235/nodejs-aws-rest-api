@@ -37,7 +37,7 @@ export const productsRoute = (event: APIGatewayEvent) => {
 
             const filtered = filterProducts(serviceAData.products, availableProducts, inputData);
             // @ts-ignore
-            customerProducts = mapPrices(filtered, customerData, inputData && inputData.isBusinessCustomer || false);
+            customerProducts = mapPrices(filtered, customerData, inputData);
 
 
             const body: ProductsBody = {
